@@ -119,10 +119,14 @@
 ';
         }
 
-        if ($value->source == "web") {
-          $source = "Web Site";
-        } elseif ($value->source == "api") {
-          $source = "Web Servis(Api)";
+        if ($value->source == "http://marwablog.com/") {
+          $source = "www.marwablog.com";
+        } elseif ($value->source == "http://akhbartr.com/") {
+          $source = "www.akhbartr.com";
+        } elseif ($value->source == "http://shaearwasaf.com/") {
+          $source = "www.shaearwasaf.com";
+        } else {
+          $source = "-";
         }
         
             echo '

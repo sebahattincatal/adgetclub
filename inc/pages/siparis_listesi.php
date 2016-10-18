@@ -33,7 +33,7 @@
                     <th>Ürün</th>
                     <th>Fiyat</th>
                      <th>Kayıt Tarihi</th>
-                    <th>il/ilce</th>
+                    <!--<th>il/ilce</th>-->
                     <th>Durumu</th>
                     <th>Kilit</th>
                     <th>İşlem</th>
@@ -63,13 +63,6 @@
 
                 <?php
 
-
-              
-
-
-
-
-
               $e = $db->get_results("SELECT * FROM siparisler where siparis_durumu='".$drm."' AND siparis_tipi='".$tip."' order by siparis_id DESC ");
               foreach ($e as  $value) {
 
@@ -82,10 +75,11 @@
                     <td>'.$value->urunun_adi.'</td>
                     <td>'.$value->fiyat.'</td>
                     <td>'.$value->kayit_tarihi.'</td>
-                    <td>'.$value->il.' / '.$value->ilce.'<br> '.$value->update_date.'</td>
                     <td > '.$durum->name.'  
 
                     ';
+
+                    //<td>'.$value->il.' / '.$value->ilce.'<br> '.$value->update_date.'</td>
 
                     if($drm==9 or $drm==7){echo "<br>".date("d-m-Y", strtotime($value->satis_tarihi));}
                     echo'

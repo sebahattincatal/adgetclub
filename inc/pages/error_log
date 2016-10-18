@@ -1,0 +1,117 @@
+[23-Aug-2016 11:19:18 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:19:18 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:19:18 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 19
+[23-Aug-2016 11:20:00 UTC] PHP Warning:  include_once(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:20:00 UTC] PHP Warning:  include_once(): Failed opening 'inc/config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:20:00 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 19
+[23-Aug-2016 11:20:02 UTC] PHP Warning:  include_once(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:20:02 UTC] PHP Warning:  include_once(): Failed opening 'inc/config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:20:02 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 19
+[23-Aug-2016 11:20:23 UTC] PHP Warning:  include_once(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:20:23 UTC] PHP Warning:  include_once(): Failed opening 'inc/config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:20:23 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 19
+[23-Aug-2016 11:20:51 UTC] PHP Warning:  include_once(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:20:51 UTC] PHP Warning:  include_once(): Failed opening 'inc/config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:20:51 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 21
+[23-Aug-2016 11:21:02 UTC] PHP Warning:  include_once(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:21:02 UTC] PHP Warning:  include_once(): Failed opening 'inc/config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:21:02 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 21
+[23-Aug-2016 11:21:20 UTC] PHP Warning:  include_once(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:21:20 UTC] PHP Warning:  include_once(): Failed opening 'inc/config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:21:20 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 23
+[23-Aug-2016 11:21:50 UTC] PHP Warning:  include_once(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:21:50 UTC] PHP Warning:  include_once(): Failed opening 'inc/config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:21:50 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 23
+[23-Aug-2016 11:22:18 UTC] PHP Warning:  include(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:22:18 UTC] PHP Warning:  include(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:22:18 UTC] PHP Warning:  include(): Failed opening 'inc/config.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:22:18 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 23
+[23-Aug-2016 11:22:40 UTC] PHP Warning:  require(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:22:40 UTC] PHP Warning:  require(inc/config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:22:40 UTC] PHP Fatal error:  require(): Failed opening required 'inc/config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:23:30 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 23
+[23-Aug-2016 11:24:08 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 25
+[23-Aug-2016 11:24:27 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 25
+[23-Aug-2016 11:26:09 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 25
+[23-Aug-2016 11:29:20 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 25
+[23-Aug-2016 11:29:27 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 25
+[23-Aug-2016 11:30:18 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 25
+[23-Aug-2016 11:30:33 UTC] PHP Fatal error:  Call to a member function query() on null in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 25
+[23-Aug-2016 11:31:07 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:31:07 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:31:07 UTC] PHP Fatal error:  require(): Failed opening required 'inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:31:36 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:31:36 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:31:36 UTC] PHP Fatal error:  require(): Failed opening required '..\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:31:46 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:31:46 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:31:46 UTC] PHP Fatal error:  require(): Failed opening required '..\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:32:25 UTC] PHP Warning:  include_once(db/shared/ez_sql_core.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:32:25 UTC] PHP Warning:  include_once(): Failed opening 'db/shared/ez_sql_core.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:32:25 UTC] PHP Warning:  include_once(db/ez_sql_mysql.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 4
+[23-Aug-2016 11:32:25 UTC] PHP Warning:  include_once(): Failed opening 'db/ez_sql_mysql.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 4
+[23-Aug-2016 11:32:25 UTC] PHP Fatal error:  Class 'ezSQL_mysql' not found in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 12
+[23-Aug-2016 11:34:54 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:34:54 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:34:54 UTC] PHP Fatal error:  require(): Failed opening required 'inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:38:35 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:38:35 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:38:35 UTC] PHP Fatal error:  require(): Failed opening required 'inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:38:43 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:38:43 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 11:38:43 UTC] PHP Fatal error:  require(): Failed opening required 'inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:01:38 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:01:38 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:01:38 UTC] PHP Fatal error:  require(): Failed opening required 'inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:02:43 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:02:43 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:02:43 UTC] PHP Fatal error:  require(): Failed opening required 'inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:02:52 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:02:52 UTC] PHP Warning:  require(inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:02:52 UTC] PHP Fatal error:  require(): Failed opening required 'inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:03:37 UTC] PHP Warning:  require(\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:03:38 UTC] PHP Warning:  require(\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:03:38 UTC] PHP Fatal error:  require(): Failed opening required '\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:03:44 UTC] PHP Warning:  require(\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:03:44 UTC] PHP Warning:  require(\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:03:44 UTC] PHP Fatal error:  require(): Failed opening required '\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:16 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:16 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:16 UTC] PHP Fatal error:  require(): Failed opening required '..\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:51 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:51 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:51 UTC] PHP Fatal error:  require(): Failed opening required '..\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:54 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:54 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:04:54 UTC] PHP Fatal error:  require(): Failed opening required '..\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:05:07 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:05:07 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:05:07 UTC] PHP Fatal error:  require(): Failed opening required '..\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:05:15 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:05:15 UTC] PHP Warning:  require(..\inc\config.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:05:15 UTC] PHP Fatal error:  require(): Failed opening required '..\inc\config.php' (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/siparis_son.php on line 3
+[23-Aug-2016 12:06:11 UTC] PHP Warning:  include_once(db/shared/ez_sql_core.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:06:11 UTC] PHP Warning:  include_once(): Failed opening 'db/shared/ez_sql_core.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:06:11 UTC] PHP Warning:  include_once(db/ez_sql_mysql.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:06:11 UTC] PHP Warning:  include_once(): Failed opening 'db/ez_sql_mysql.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:06:11 UTC] PHP Fatal error:  Class 'ezSQL_mysql' not found in /home/adgetcrm/public_html/inc/pages/config.php on line 12
+[23-Aug-2016 12:06:54 UTC] PHP Warning:  include_once(inc/db/shared/ez_sql_core.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:06:54 UTC] PHP Warning:  include_once(): Failed opening 'inc/db/shared/ez_sql_core.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:06:54 UTC] PHP Warning:  include_once(inc/db/ez_sql_mysql.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:06:54 UTC] PHP Warning:  include_once(): Failed opening 'inc/db/ez_sql_mysql.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:06:54 UTC] PHP Fatal error:  Class 'ezSQL_mysql' not found in /home/adgetcrm/public_html/inc/pages/config.php on line 12
+[23-Aug-2016 12:08:58 UTC] PHP Warning:  include_once(inc/db/shared/ez_sql_core.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:08:58 UTC] PHP Warning:  include_once(): Failed opening 'inc/db/shared/ez_sql_core.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:08:58 UTC] PHP Warning:  include_once(inc/db/ez_sql_mysql.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:08:58 UTC] PHP Warning:  include_once(): Failed opening 'inc/db/ez_sql_mysql.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:08:58 UTC] PHP Fatal error:  Class 'ezSQL_mysql' not found in /home/adgetcrm/public_html/inc/pages/config.php on line 12
+[23-Aug-2016 12:09:33 UTC] PHP Warning:  include_once(inc/db/shared/ez_sql_core.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:09:33 UTC] PHP Warning:  include_once(): Failed opening 'inc/db/shared/ez_sql_core.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:09:33 UTC] PHP Warning:  include_once(inc/db/ez_sql_mysql.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:09:33 UTC] PHP Warning:  include_once(): Failed opening 'inc/db/ez_sql_mysql.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:09:33 UTC] PHP Fatal error:  Class 'ezSQL_mysql' not found in /home/adgetcrm/public_html/inc/pages/config.php on line 12
+[23-Aug-2016 12:09:40 UTC] PHP Warning:  include_once(inc/db/shared/ez_sql_core.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:09:40 UTC] PHP Warning:  include_once(): Failed opening 'inc/db/shared/ez_sql_core.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 3
+[23-Aug-2016 12:09:40 UTC] PHP Warning:  include_once(inc/db/ez_sql_mysql.php): failed to open stream: No such file or directory in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:09:40 UTC] PHP Warning:  include_once(): Failed opening 'inc/db/ez_sql_mysql.php' for inclusion (include_path='.;/path/to/php/pear') in /home/adgetcrm/public_html/inc/pages/config.php on line 4
+[23-Aug-2016 12:09:40 UTC] PHP Fatal error:  Class 'ezSQL_mysql' not found in /home/adgetcrm/public_html/inc/pages/config.php on line 12

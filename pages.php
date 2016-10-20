@@ -136,6 +136,10 @@ define("idokey", "1");
                     include("inc/pages/pers_sales_list.php");
                     break;
 
+                case "kaynakrapor":
+                    include("inc/pages/pers_source_list.php");
+                    break;
+
                 case "kargoList":
                     include("inc/pages/kargo.php");
                     break;

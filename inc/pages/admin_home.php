@@ -330,16 +330,45 @@
                     </div>
                 </div>
                 <!-- row -->
-
-
             </div>
             <!-- stat -->
-
         </div>
         <!-- panel-heading -->
     </div>
     <!-- panel -->
 </div><!-- col-sm-6 -->
+
+
+
+
+
+<div class="col-sm-6 col-md-3">
+    <div class="panel panel-success panel-stat">
+        <div class="panel-heading">
+            <div class="stat">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="images/is-document.png" alt=""/>
+                    </div>
+                    <div class="col-xs-8">
+                        <small>Kaynak Satış Raporu</small>
+                        <br>
+                        <a href="pages.php?ido=kaynakrapor" class="btn btn-primary mr5 btn-lg">Kaynak Satış rapor</a>
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- stat -->
+        </div>
+        <!-- panel-heading -->
+    </div>
+    <!-- panel -->
+</div><!-- col-sm-6 -->
+
+
+
+
+
 
 
 <div class="col-sm-6 col-md-3">

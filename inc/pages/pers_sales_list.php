@@ -2,6 +2,12 @@
 
 <?php
 
+    /*
+     * author: @sebahattincatal
+     * website: www.sebahattincatal.com
+     * email: sebahattin.catal@yandex.com
+     */
+
     if($_POST) 
     {
       $start = str_replace("/", "-", $_POST["start"]); 
@@ -105,33 +111,23 @@
 
                       if($satis->ciro>0){
                           echo '
-                          <tr class="odd gradeX">
-                            <td>'.$value->mail.'</td>
-                            <td>'.$satis->adet.'</td>
-                            <td>'.(int)$dizim[2].'</td>
-                            <td>'.(int)$dizim[3].'</td>
-                            <td>'.(int)$dizim[9].'</td>
-                            <td>'.(int)$dizim[4].'</td>
-                       
-                            <td>'.number_format($satis->urunAdeti).' </td>
-                            <td>'.number_format($satis->urunAdeti/$satis->adet,1).'</td>
-                            <td>'.number_format($satis->ciro/$satis->adet).'</td>
-                            <td>'.number_format($satis->ciro).'</td>
-                          
+                            <tr class="odd gradeX">
+                              <td>'.$value->mail.'</td>
+                              <td>'.$satis->adet.'</td>
+                              <td>'.(int)$dizim[2].'</td>
+                              <td>'.(int)$dizim[3].'</td>
+                              <td>'.(int)$dizim[9].'</td>
+                              <td>'.(int)$dizim[4].'</td>
+                              <td>'.number_format($satis->urunAdeti).' </td>
+                              <td>'.number_format($satis->urunAdeti/$satis->adet,1).'</td>
+                              <td>'.number_format($satis->ciro/$satis->adet).'</td>
+                              <td>'.number_format($satis->ciro).'</td>
+                              ';
 
-                            ';
-
-
-                            echo'
-                
-                            <td >
-
-                            <a href="pages.php?ido=Pers_sales_view&id='.$value->admin_id.'&start='.$start_data.'&stop='.$stop_data.'" class="btn btn-info">Satışları</a>
-
-
-                            </td>
-                         </tr>
-                         ';
+                            echo '<td >
+                              <a href="pages.php?ido=pers_source_sales_view&id='.$value->admin_id.'&start='.$start_data.'&stop='.$stop_data.'" class="btn btn-info">Satışları</a>
+                              </td>
+                            </tr>';
                          }
                       }
               ?>

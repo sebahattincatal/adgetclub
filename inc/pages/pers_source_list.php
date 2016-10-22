@@ -1,68 +1,63 @@
 <?php if (!defined("idokey")) { exit(); }?>
 
-
-
 <?php
 
-if($_POST){
-  $start = str_replace("/", "-", $_POST["start"]); 
-  $stop  = str_replace("/", "-", $_POST["stop"]); 
+    /*
+     * author: @sebahattincatal
+     * website: www.sebahattincatal.com
+     * email: sebahattin.catal@yandex.com
+     */
 
-  if(empty($start)){$start = date("Y-m-d"); }
-  if(empty($stop)){$stop   = date("Y-m-d"); }
+    if($_POST)
+    {
+      $start = str_replace("/", "-", $_POST["start"]); 
+      $stop  = str_replace("/", "-", $_POST["stop"]); 
 
-}else{
-  $start = date("Y-m-d");
-  $stop = date("Y-m-d");
-}
+      if(empty($start)){$start = date("Y-m-d"); }
+      if(empty($stop)){$stop   = date("Y-m-d"); }
 
- $start_data = date("Y-m-d", strtotime($start));
- $stop_data =date("Y-m-d", strtotime($stop));
+    } else {
+      $start = date("Y-m-d");
+      $stop = date("Y-m-d");
+    }
 
+    $start_data = date("Y-m-d", strtotime($start));
+    $stop_data =date("Y-m-d", strtotime($stop));
 
-
-$p1 = str_replace("-","/",date("d-m-Y", strtotime($start_data)));
-$p2 = str_replace("-","/",date("d-m-Y", strtotime($stop_data))); 
-
-
-
+    $p1 = str_replace("-","/",date("d-m-Y", strtotime($start_data)));
+    $p2 = str_replace("-","/",date("d-m-Y", strtotime($stop_data))); 
 ?>
 
-
-
-
 <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <div class="panel-btns">
-                <a href="" class="panel-close">&times;</a>
-                <a href="" class="minimize">&minus;</a>
-              </div>
-              <h4 class="panel-title">Tarih </h4>
-            </div>
-            <div class="panel-body">
-            <form action="" method="post">
-           
-              
-              <div class="input-group col-md-4" style="float:left; width:200px; ">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                <input type="text" name="start" value="<?=$p1?>" placeholder="Başlangıç" id="date" class="form-control date" />
-              </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-btns">
+        <a href="" class="panel-close">&times;</a>
+        <a href="" class="minimize">&minus;</a>
+      </div>
+      <h4 class="panel-title">Tarih </h4>
+    </div>
+    <div class="panel-body">
+    <form action="" method="post">
+   
+      
+      <div class="input-group col-md-4" style="float:left; width:200px; ">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+        <input type="text" name="start" value="<?=$p1?>" placeholder="Başlangıç" id="date" class="form-control date" />
+      </div>
 
-              <div class="input-group col-md-4" style="float:left; margin-left:20px; width:200px;">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                <input type="text" name="stop" value="<?=$p2?>" placeholder="Bitiş" id="date" class="form-control date" />
-              </div>
+      <div class="input-group col-md-4" style="float:left; margin-left:20px; width:200px;">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+        <input type="text" name="stop" value="<?=$p2?>" placeholder="Bitiş" id="date" class="form-control date" />
+      </div>
 
-                <div class="input-group col-md-4" style="float:left; margin-left:20px; width:200px;"> 
-              <input type="submit" class="btn btn-info"></div>
-            </form>  
-                          
-            </div>
-          </div><!-- panel -->
-        </div><!-- col-md-6 -->
-
-
+        <div class="input-group col-md-4" style="float:left; margin-left:20px; width:200px;"> 
+      <input type="submit" class="btn btn-info"></div>
+    </form>  
+                  
+    </div>
+  </div><!-- panel -->
+</div><!-- col-md-6 -->
 
 <div class="panel panel-default">
         <div class="panel-heading">
@@ -73,8 +68,6 @@ $p2 = str_replace("-","/",date("d-m-Y", strtotime($stop_data)));
           <h3 class="panel-title">Kaynak Satış Rapor</h3>
         </div>
         <div class="panel-body">
-     
-      
           <div class="table-responsive">
             <table class="table" id="table1">
               <thead>
@@ -95,8 +88,6 @@ $p2 = str_replace("-","/",date("d-m-Y", strtotime($stop_data)));
                  </tr>
               </thead>
               <tbody>
-
-
 
               <?php
 
@@ -163,28 +154,27 @@ $p2 = str_replace("-","/",date("d-m-Y", strtotime($stop_data)));
 
                     $Toplam['result'] += $result;
 
-                    if($yeni->ciro>0){
-                  echo '
-                  <tr class="odd gradeX">
-                    <td>'.$value->mail.'</td>
-                    <td>'.$yeni->adet.'</td>
-                    <td>'.$satis->adet.'</td>
-                    <td>'.(int)$iptal->adet.'</td>
-                    <td>'.(int)$dizim[2].'</td>
-                    <td>'.(int)$dizim[3].'</td>
-                    <td>'.(int)$dizim[4].'</td>
-                    <td>'.number_format($yeni->urunAdeti).' </td>
-                    <td>'.number_format(($yeni->urunAdeti/$yeni->adet), 1, ',', '.').'</td>
-                    <td>'.number_format(($yeni->ciro/$yeni->adet), 2, ',', '.').' ₺</td>
-                    <td>'.number_format(($yeni->ciro-$yeni->t_indirim), 2, ',', '.').' ₺</td>
-                    <td>'.$result.'</td>
-                    ';
-                    echo '<td ><a href="pages.php?ido=pers_source_sales_view&id='.$value->admin_id.'&start='.$start_data.'&stop='.$stop_data.'" class="btn btn-info">Satışları</a></td>
-                 </tr>
-                 ';
-                 }
-            }
-
+                    if($yeni->ciro>0) {
+                      echo '
+                      <tr class="odd gradeX">
+                        <td>'.$value->mail.'</td>
+                        <td>'.$yeni->adet.'</td>
+                        <td>'.$satis->adet.'</td>
+                        <td>'.(int)$iptal->adet.'</td>
+                        <td>'.(int)$dizim[2].'</td>
+                        <td>'.(int)$dizim[3].'</td>
+                        <td>'.(int)$dizim[4].'</td>
+                        <td>'.number_format($yeni->urunAdeti).' </td>
+                        <td>'.number_format(($yeni->urunAdeti/$yeni->adet), 1, ',', '.').'</td>
+                        <td>'.number_format(($yeni->ciro/$yeni->adet), 2, ',', '.').' ₺</td>
+                        <td>'.number_format(($yeni->ciro-$yeni->t_indirim), 2, ',', '.').' ₺</td>
+                        <td>'.$result.'</td>
+                        ';
+                        echo '<td ><a href="pages.php?ido=pers_source_sales_view&id='.$value->admin_id.'&start='.$start_data.'&stop='.$stop_data.'" class="btn btn-info">Satışları</a></td>
+                     </tr>
+                     ';
+                  }
+                }
               ?>
               </tbody>
                 <tfoot>
@@ -205,9 +195,6 @@ $p2 = str_replace("-","/",date("d-m-Y", strtotime($stop_data)));
                 </tfoot>
            </table>
           </div><!-- table-responsive -->
-       
-    
-          
         </div><!-- panel-body -->
       </div><!-- panel -->
         

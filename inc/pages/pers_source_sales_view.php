@@ -1,4 +1,14 @@
-<?php if (!defined("idokey")) { exit(); }
+<?php 
+
+    /*
+     * author: @sebahattincatal
+     * website: www.sebahattincatal.com
+     * email: sebahattin.catal@yandex.com
+     */
+
+    if (!defined("idokey")) { 
+      exit(); 
+    }
 
     $personel = (int)$_GET["id"];
     $start  = mysql_real_escape_string(strip_tags($_GET["start"]));

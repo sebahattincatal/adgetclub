@@ -3,7 +3,7 @@ session_start();
 ob_start();
 include("inc/include.php");
 error_reporting(0);
-echo ' <meta charset="utf-8">';
+//echo ' <meta charset="utf-8">';
 oturum_koru();
 
 define("idokey", "1");

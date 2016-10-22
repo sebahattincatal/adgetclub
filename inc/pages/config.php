@@ -3,7 +3,7 @@
 	include_once "inc/db/shared/ez_sql_core.php";
 	include_once "inc/db/ez_sql_mysql.php";
 
-	$prefix = "adgetcrm_";
+	$prefix = "adgetclu_";
 	$vt_kullanici=$prefix."user";
 	$vt_parola="12022133";
 	$vt_isim=$prefix."db";
@@ -19,11 +19,4 @@
    	'800'=>'_img_/img_one/'
    	);
 
-/*
- * sigarabirakin
- * vQrvVLcVLZ
- *
- */
-
- 
 ?>

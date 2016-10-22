@@ -6,6 +6,7 @@
 	$prefix = "adgetclu_";
 	$vt_kullanici=$prefix."user";
 	$vt_parola="12022133";
+	//$vt_parola="samet1202";
 	$vt_isim=$prefix."db";
 	$vt_sunucu="localhost";
  

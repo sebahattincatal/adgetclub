@@ -148,6 +148,10 @@ define("idokey", "1");
                     include("inc/pages/Pers_sales_view.php");
                     break;
 
+                case "pers_source_sales_view":
+                    include("inc/pages/pers_source_sales_view.php");
+                    break;
+
                 case "pers_report":
                     include("inc/pages/pers_report.php");
                     break;

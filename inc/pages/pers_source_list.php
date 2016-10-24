@@ -109,7 +109,7 @@
                   // iptal
                   $cancel_order_case = "(siparis_durumu = 5)";
 
-                  $e = $db->get_results("SELECT * FROM admin");
+                  $e = $db->get_results("SELECT * FROM kaynak");
                   
 
                   $Toplam = array();
@@ -158,7 +158,7 @@
                     if($yeni->ciro>0) {
                       echo '
                       <tr class="odd gradeX">
-                        <td>'.$value->mail.'</td>
+                        <td>'.$value->kaynak_adres.'</td>
                         <td>'.$yeni->adet.'</td>
                         <td>'.$satis->adet.'</td>
                         <td>'.(int)$iptal->adet.'</td>

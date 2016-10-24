@@ -22,42 +22,29 @@
               </thead>
               <tbody>
 
+            <?php
 
-      
+              /*if($_SESSION["yetki"]==0){
+                 $e = $db->get_results("SELECT * FROM kaynak where   login_case=0  ".$sql_statu3." ");
+               }else{
+                 $e = $db->get_results("SELECT * FROM kaynak where user_type=0 AND login_case=0  ".$sql_statu3." ");
+               }*/
 
-              <?php
-
-
-              
-
-
-
-
-                if($_SESSION["yetki"]==0){
-                   $e = $db->get_results("SELECT * FROM admin where   login_case=0  ".$sql_statu3." ");
-                 }else{
-                   $e = $db->get_results("SELECT * FROM admin where user_type=0 AND login_case=0  ".$sql_statu3." ");
-                 }
-
-
-
+               $e = $db->get_results("SELECT * FROM kaynak ");
              
               foreach ($e as  $value) {
 
                 
                   echo '
                   <tr class="odd gradeX">
-                    <td>'.$value->name_surname.'</td>
-                    <td>'.$value->telefon.'</td>
+                    <td>'.$value->kaynak_isim.'</td>
+                    <td>'.$value->kaynak_adres.'</td>
                
                     <td >
 
-       <a href="pages.php?ido=pers_edit&id='.$value->admin_id.'" class="btn btn-info">Düzenle</a>
-       <a href="pages.php?ido=pers_report&id='.$value->admin_id.'" class="btn btn-warning">Rapor</a>
+       <a href="pages.php?ido=site_edit&id='.$value->id.'" class="btn btn-info">Düzenle</a>
 ';
 
-       
-   
         
 echo '
 

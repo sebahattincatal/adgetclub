@@ -127,6 +127,10 @@ define("idokey", "1");
                     include("inc/pages/personel_edit.php");
                     break;
 
+                case "site_edit":
+                    include("inc/pages/site_edit.php");
+                    break;
+
                 case "personel_ekle":
                     include("inc/pages/personel_add.php");
                     break;
@@ -164,6 +168,9 @@ define("idokey", "1");
                     include("inc/pages/pers_report.php");
                     break;
 
+                case "site_report":
+                    include("inc/pages/site_report.php");
+                    break;
 
                 case "PersPrim":
                     include("inc/pages/PersPrim.php");

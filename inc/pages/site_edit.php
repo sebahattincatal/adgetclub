@@ -4,64 +4,55 @@
 
 <?php
 
+    $id = (int)$_GET["id"];
 
-$id = (int)$_GET["id"];
-
-if (empty($id)) {
-    header("Location:index.php");
-}
-
-
-$user_type = $_SESSION["user_type"];
-
-if ($user_type < 1) {
-    header("Location:index.php");
-}
-
-
-if ($_POST) {
-
-
-    /*$telefon = filler($_POST["telefon"]);
-    $siparis["mail"] = tts($_POST["mail"]);
-    $siparis["telefon"] = tts($_POST["telefon"]);
-    $siparis["name_surname"] = tts($_POST["name_surname"]);
-    $siparis["user_type"] = tts($_POST["user_type"]);
-    $siparis["login_case"] = tts($_POST["login_case"]);
-    $siparis["sip_type"] = tts($_POST["sip_type"]);
-    $siparis["agent"] = tts($_POST["agent"]);
-    $siparis["extra_yetki"] = implode(",", $_POST["ozel_yetki"]);*/
-
-    $site['kaynak_adres'] = tts($_POST["kaynak_adres"]);
-    $site['kaynak_isim'] = tts($_POST["kaynak_isim"]);
-
-
-    /*if (!empty($_POST["sifre"])) {
-        $siparis["password"] = md5(p($_POST["sifre"]));
-    }*/
-
-
-    $where = "id='" . $id . "'";
-
-
-    $degistir = update_array("kaynak", $site, $where);
-
-    if ($degistir) {
-        alert_yes("İşleminiz Başarılı");
-    } else {
-        alert_no("işleminiz Başarısız.");
+    if (empty($id)) {
+        header("Location:index.php");
     }
 
-}
+    $user_type = $_SESSION["user_type"];
+
+    if ($user_type < 1) {
+        header("Location:index.php");
+    }
 
 
-$row = $db->get_row("SELECT * FROM kaynak where id='" . $id . "' ");
+    if ($_POST) {
 
 
-if (!$row) {
-    header("Location:index.php");
-}
-?>
+        /*$telefon = filler($_POST["telefon"]);
+        $siparis["mail"] = tts($_POST["mail"]);
+        $siparis["telefon"] = tts($_POST["telefon"]);
+        $siparis["name_surname"] = tts($_POST["name_surname"]);
+        $siparis["user_type"] = tts($_POST["user_type"]);
+        $siparis["login_case"] = tts($_POST["login_case"]);
+        $siparis["sip_type"] = tts($_POST["sip_type"]);
+        $siparis["agent"] = tts($_POST["agent"]);
+        $siparis["extra_yetki"] = implode(",", $_POST["ozel_yetki"]);*/
+
+        $site['kaynak_adres'] = tts($_POST["kaynak_adres"]);
+        $site['kaynak_isim'] = tts($_POST["kaynak_isim"]);
+
+        $where = "id='" . $id . "'";
+
+        $degistir = update_array("kaynak", $site, $where);
+
+        if ($degistir) {
+            alert_yes("İşleminiz Başarılı");
+        } else {
+            alert_no("işleminiz Başarısız.");
+        }
+
+    }
+
+
+    $row = $db->get_row("SELECT * FROM kaynak where id = '" . $id . "' ");
+
+
+    if (!$row) {
+        header("Location:index.php");
+    }
+    ?>
 
 
 <div class="contentpanel">

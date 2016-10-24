@@ -22,8 +22,8 @@ if ($_POST) {
     $siparis["user_type"] = tts($_POST["user_type"]);
     $siparis["agent"] = tts($_POST["agent"]);*/
 
-    $site['adres'] = tts($_POST["kaynak_adres"]);
-    $site['isim'] = tts($_POST["kaynak_isim"]);
+    $site['kaynak_adres'] = tts($_POST["kaynak_adres"]);
+    $site['kaynak_isim'] = tts($_POST["kaynak_isim"]);
 
     $degistir = insert_array("kaynak", $site);
 

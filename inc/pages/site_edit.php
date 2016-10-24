@@ -52,7 +52,6 @@ if ($_POST) {
         alert_no("işleminiz Başarısız.");
     }
 
-
 }
 
 

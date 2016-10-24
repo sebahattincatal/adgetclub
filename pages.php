@@ -119,12 +119,20 @@ define("idokey", "1");
                     include("inc/pages/personeller.php");
                     break;
 
+                case "siteler":
+                    include("inc/pages/siteler.php");
+                    break;
+
                 case "pers_edit":
                     include("inc/pages/personel_edit.php");
                     break;
 
                 case "personel_ekle":
                     include("inc/pages/personel_add.php");
+                    break;
+
+                case "site_ekle":
+                    include("inc/pages/site_add.php");
                     break;
 
                 case "Rapor":

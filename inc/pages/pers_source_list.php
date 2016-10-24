@@ -110,6 +110,8 @@
                   $cancel_order_case = "(siparis_durumu = 5)";
 
                   $e = $db->get_results("SELECT * FROM admin");
+                  
+
                   $Toplam = array();
                   foreach ($e as  $value) {
 
@@ -122,19 +124,18 @@
                   #$satis = $db->get_row("SELECT sum(fiyat) as ciro, Sum(urun_adeti) as urunAdeti, count(*) as adet  FROM siparisler where  islem_tarihi  between '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  personel='".$value->admin_id."' AND siparis_durumu in (7,9)  ".$sql_statu."   ");
                   /*$satis = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  satis_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  personel='".$value->admin_id."' AND ".$order_case);*/
 
-                  $satis = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND ".$order_case);
+                  /*$satis = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND ".$order_case);
 
-                  $yeni = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND ".$new_order_case);
+                  $yeni = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND ".$new_order_case);*/
 
-                  /*$iptal = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND ".$cancel_order_case);
+                  /*$kaynak = $db->get_results("SELECT * FROM kaynak");
 
-                  $ulasilamayan = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND ".$unreachable_order_case);
+                  print_r($kaynak);exit;*/
+                  
+                  $satis = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->id."' AND ".$order_case);
 
-                  $ileri_tarihli = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND ".$nextcall_order_case);
-
-                  $gecersiz = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND ".$invalid_order_case);*/
-
-
+                  $yeni = $db->get_row("SELECT SUM(fiyat) as ciro, SUM(indirim) AS t_indirim, SUM(urun_adeti) AS urunAdeti, COUNT(*) AS adet  FROM siparisler WHERE  kayit_tarihi  BETWEEN '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->id."' AND ".$new_order_case);
+                  
                     $Toplam['yeni'] += $yeni->adet;
                     $Toplam["satis"] += $satis->adet;
                     $Toplam["ciro"] += ((float)$yeni->ciro-(float)$yeni->t_indirim);

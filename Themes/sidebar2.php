@@ -82,6 +82,13 @@
                     </ul>
                 </li>
 
+                <li class="nav-parent"><a href=""><i class="fa fa-user"></i> <span>Kaynak Siteleri</span></a>
+                  <ul class="children">
+                    <li><a href="pages.php?ido=siteler"><i class="fa fa-caret-right"></i> Siteler</a></li>
+                    <li><a href="pages.php?ido=site_ekle"><span class="pull-right badge badge-danger">Yeni</span><i class="fa fa-caret-right"></i> Site Ekle</a></li>
+                  </ul>
+                </li>
+
             <?php }
 
             if($_SESSION["user_type"] == 1){

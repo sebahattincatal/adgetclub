@@ -15,20 +15,17 @@ if ($user_type < 1) {
 if ($_POST) {
 
 
-    $telefon = filler($_POST["telefon"]);
+    /*$telefon = filler($_POST["telefon"]);
     $siparis["mail"] = tts($_POST["mail"]);
     $siparis["telefon"] = tts($_POST["telefon"]);
     $siparis["name_surname"] = tts($_POST["name_surname"]);
     $siparis["user_type"] = tts($_POST["user_type"]);
-    $siparis["agent"] = tts($_POST["agent"]);
+    $siparis["agent"] = tts($_POST["agent"]);*/
 
+    $site['adres'] = tts($_POST["kaynak_adres"]);
+    $site['isim'] = tts($_POST["kaynak_isim"]);
 
-    if (!empty($_POST["sifre"])) {
-        $siparis["password"] = md5(($_POST["sifre"]));
-    }
-
-
-    $degistir = insert_array("admin", $siparis);
+    $degistir = insert_array("kaynak", $site);
 
     if ($degistir) {
         alert_yes("İşleminiz Başarılı");
@@ -62,117 +59,22 @@ if ($_POST) {
             <form class="form-horizontal form-bordered" method="post">
 
                 <div class="form-group">
-                    <label class="col-sm-3 control-label">Ad Soyad</label>
+                    <label class="col-sm-3 control-label">Site Adres</label>
 
                     <div class="col-sm-6">
-                        <input type="text" placeholder="Ürünün Adı" name="name_surname"
-                               value="<?= $row->name_surname ?>" required class="form-control"/>
+                        <input type="text" placeholder="http://akhbartr.com/" name="kaynak_adres"
+                               value="<?= $row->kaynak_adres ?>" required class="form-control"/>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-3 control-label">Telefon No</label>
+                    <label class="col-sm-3 control-label">Site Ad</label>
 
                     <div class="col-sm-6">
-                        <input type="text" placeholder="Telefon No" name="telefon" id="phone"
-                               value="<?= $row->telefon ?>" required class="form-control"/>
+                        <input type="text" placeholder="akhbartr.com" name="kaynak_isim"
+                               value="<?= $row->kaynak_isim ?>" required class="form-control"/>
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">Mail</label>
-
-                    <div class="col-sm-6">
-                        <input type="email" placeholder="Mail" name="mail" id="mail" value="<?= $row->mail ?>" required
-                               class="form-control"/>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-sm-3 control-label"> Şifre</label>
-
-                    <div class="col-sm-6">
-                        <input type="password" placeholder="Şifre" name="sifre" id="sifre" value=""
-                               class="form-control"/>
-                    </div>
-                </div>
-
-
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">Kuyruk</label>
-
-                    <div class="col-sm-6">
-                        <select class="form-control " id="sip_type" name="sip_type" style="width:200px">
-
-                            <?php
-                            $sx = $db->get_results("SELECT * FROM siparis_tipleri " . $sql_statu2 . " ");
-                            foreach ($sx as $valuew) {
-
-                                echo '<option value="' . $valuew->siparis_tipi . '" ';
-                                if ($valuew->siparis_tipi == $row->sip_type) {
-                                    echo 'selected';
-                                }
-
-                                echo '>' . $valuew->name . '</option>
-';
-
-
-                            }
-
-                            ?>
-
-
-                        </select>
-                    </div>
-                </div>
-
-
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">Saphira Dahili</label>
-
-                    <div class="col-sm-6">
-                        <input type="text" placeholder="Dahili" name="agent" id="agent" value="<?= $row->agent ?>"
-                               class="form-control"/>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">Pozisyon</label>
-
-                    <div class="col-sm-6">
-                        <select class="form-control " id="user_type" name="user_type" style="width:200px">
-                            <?php
-                            if (empty($_SESSION["yetki"])) {
-                                ?>
-                                <option value="1" <?php if ($row->user_type == 1) {
-                                    echo 'selected';
-                                } ?> >Yönetici
-                                </option>
-                                <option value="4" <?php if ($row->user_type == 4) {
-                                    echo 'selected';
-                                } ?> >Muhasebe Yöneticisi
-                                </option>
-                                <option value="2" <?php if ($row->user_type == 2) {
-                                    echo 'selected';
-                                } ?> >Kalite Kontrol
-                                </option>
-
-                            <?php } ?>
-
-                            <option value="0" <?php if ($row->user_type == 0) {
-                                echo 'selected';
-                            } ?>>AGENT
-                            </option>
-
-                            <option value="3" <?php if ($row->user_type == 3) {
-                                echo 'selected';
-                            } ?>>Depo Elemanı
-                            </option>
-
-                        </select>
-                    </div>
-                </div>
-
         </div>
         <!-- panel-body -->
 

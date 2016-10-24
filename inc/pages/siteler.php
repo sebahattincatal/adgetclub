@@ -6,7 +6,7 @@
             <a href="" class="panel-close">&times;</a>
             <a href="" class="minimize">&minus;</a>
           </div><!-- panel-btns -->
-          <h3 class="panel-title"> Personel Listesi</h3>
+          <h3 class="panel-title"> Site Listesi</h3>
         </div>
         <div class="panel-body">
      
@@ -15,9 +15,8 @@
             <table class="table" id="table1">
               <thead>
                  <tr>
-                    <th>Ad Soyad</th>
-                    <th>Telefon</th>
-                  
+                    <th>Site Adı</th>
+                    <th>Site Adresi</th>
                     <th>İşlem</th>
                  </tr>
               </thead>

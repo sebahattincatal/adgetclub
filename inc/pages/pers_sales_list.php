@@ -98,9 +98,9 @@
                       $dizim[$valuex->stop_case] = $valuex->adet;
                   }
 
-                    /*$satis = $db->get_row("SELECT sum(fiyat) as ciro, Sum(urun_adeti) as urunAdeti, count(*) as adet  FROM siparisler where  islem_tarihi  between '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND siparis_durumu in (7,9)  ".$sql_statu."   ");*/
+                    /*$satis = $db->get_row("SELECT sum(fiyat) as ciro, Sum(urun_adeti) as urunAdeti, count(*) as adet  FROM siparisler where  islem_tarihi  between '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id='".$value->admin_id."' AND siparis_durumu in (7,9)  ".$sql_statu."   "); ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20*/
 
-                    $satis = $db->get_row("SELECT sum(fiyat) as ciro, Sum(urun_adeti) as urunAdeti, count(*) as adet  FROM siparisler where  islem_tarihi  between '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20) AND siparis_durumu in (7,9)  ".$sql_statu."   ");
+                    $satis = $db->get_row("SELECT sum(fiyat) as ciro, Sum(urun_adeti) as urunAdeti, count(*) as adet  FROM siparisler where  islem_tarihi  between '".$start_data." 00:00:00' AND '".$stop_data." 23:59:59' AND  kaynak_id in (1,2,3) AND siparis_durumu in (7,9)  ".$sql_statu."   ");
 
                       $t1 +=$satis->adet;
                       $t2 +=$dizim[2];

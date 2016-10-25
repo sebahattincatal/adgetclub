@@ -9,6 +9,16 @@ function personel($sutun, $id)
 
 }
 
+function site($sutun, $id)
+{
+    global $db;
+
+    $e = $db->get_row("SELECT " . $sutun . " FROM `kaynak` WHERE `id` = '" . $id . "'");
+
+    return $e->$sutun;
+
+}
+
 function product($sutun, $id)
 {
     global $db;

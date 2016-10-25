@@ -183,7 +183,7 @@ switch ($case) {
 		case "14587002":
 
 
-		$e = $db->get_row("SELECT siparis_id FROM  siparisler WHERE siparis_durumu=7 AND kal_kontrol=0 AND siparis_tipi<>4 order by kalite_date asc  limit 1");
+		$e = $db->get_row("SELECT siparis_id FROM  siparisler WHERE siparis_durumu = 7 AND kal_kontrol=0 AND siparis_tipi<>4 order by kalite_date asc  limit 1");
 		if($e){
 		echo $e->siparis_id;
 		}else{

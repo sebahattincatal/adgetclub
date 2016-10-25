@@ -30,7 +30,7 @@
             <a href="" class="panel-close">&times;</a>
             <a href="" class="minimize">&minus;</a>
           </div><!-- panel-btns -->
-          <h3 class="panel-title"> <?php echo personel("name_surname",$personel) ?> 'in <?=$start?> / <?=$stop?> Tarihli Satış Listesi</h3>
+          <h3 class="panel-title"> <?php echo site("kaynak_isim",$personel) ?> 'in <?=$start?> / <?=$stop?> Tarihli Satış Listesi</h3>
         </div>
         <div class="panel-body">
           <div class="table-responsive">

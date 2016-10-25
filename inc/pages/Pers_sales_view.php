@@ -31,7 +31,6 @@
                     <th>Telefon</th>
                     <th>Ürün</th>
                     <th>Fiyat</th>
-                    <th>il/ilce</th>
                     <th>Durumu</th>
                     <th>Satış Tarihi</th>
                     <th>İşlem</th>
@@ -51,7 +50,6 @@
                         <td>'.$value->Telefon_no.'</td>
                         <td>'.$value->urunun_adi.'</td>
                         <td>'.$value->fiyat.'</td>
-                        <td>'.$value->il.' / '.$value->ilce.'<br> '.$value->update_date.'</td>
                         <td > ';  
 
                        if($value->siparis_durumu==7){

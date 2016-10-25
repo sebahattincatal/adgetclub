@@ -1,7 +1,7 @@
 <?php
 
-	include_once "inc/db/shared/ez_sql_core.php";
-	include_once "inc/db/ez_sql_mysql.php";
+	include_once "db/shared/ez_sql_core.php";
+	include_once "db/ez_sql_mysql.php";
 
 	$prefix = "adgetclu_";
 	$vt_kullanici=$prefix."user";

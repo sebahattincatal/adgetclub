@@ -1,13 +1,18 @@
 <?php
-session_start();
-ob_start();
-include("inc/include.php");
-oturum_koru();
-error_reporting(0);
 
+    /*
+     * author: @sebahattincatal
+     * website: www.sebahattincatal.com
+     * email: sebahattin.catal@yandex.com
+     */
 
-define("idokey", "1");
+    session_start();
+    ob_start();
+    include("inc/include.php");
+    oturum_koru();
+    error_reporting(0);
 
+    define("idokey", "1");
 
 ?>
 

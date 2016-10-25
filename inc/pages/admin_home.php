@@ -230,6 +230,34 @@
     <!-- panel -->
 </div><!-- col-sm-6 -->
 
+<div class="col-sm-6 col-md-3">
+    <div class="panel panel-success panel-stat">
+        <div class="panel-heading">
+
+            <div class="stat">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="images/is-document.png" alt=""/>
+                    </div>
+                    <div class="col-xs-8">
+                        <small>Kalitenin Onayladıkları Siparişler</small>
+                        <button class="btn btn-primary mr5 btn-lg" data-toggle="modal" data-target="#">
+                            Kaliteden Geçenler
+                        </button>
+                    </div>
+                </div>
+                <!-- row -->
+
+
+            </div>
+            <!-- stat -->
+
+        </div>
+        <!-- panel-heading -->
+    </div>
+    <!-- panel -->
+</div><!-- col-sm-6 -->
+
 
 <div class="col-sm-6 col-md-3" <?=$div_statu?>>
     <div class="panel panel-success panel-stat">

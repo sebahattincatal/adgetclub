@@ -145,6 +145,34 @@ $esqlx = $db->get_row("SELECT sum(fiyat) as ciro, count(*) as adet from  siparis
             </div>
         </div>
 
+        <div <?= $div_statu ?> class="modal fade bs-example-modal-lgs kaliteara" tabindex="-1" role="dialog"
+                               aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                        <h4 class="modal-title">Kaliteden Geçenlerin Listesi</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="javascript:KalitedenGecenleriListele();" method="post">
+
+                            <div class="input-group" style="width:250px;">
+                                <input type="text" value="<?= date("d/m/Y") ?>" class="form-control date kargo-listesi-datepicker" name="tarih"
+                                       placeholder="<?= date("d/m/Y") ?>" id="tarihsss">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-default">Liste!</button>
+                  </span>
+                            </div>
+                        </form>
+
+                        <div id="pops"></div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div <?= $div_statu ?> class="modal fade dataView" tabindex="-1" role="dialog"
                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -459,6 +487,17 @@ $esqlx = $db->get_row("SELECT sum(fiyat) as ciro, count(*) as adet from  siparis
                     $("#pops").html(tss);
                 }
 
+            }
+
+            function KalitedenGecenleriListele() {
+
+                var tarih = $("#tarihsss").val();
+                if (tarih == "") {
+                    alert("Tarih Seçiniz");
+                } else {
+                    var tss = '<iframe frameborder="0" width="5" height="5" src="/inc/this_quality_excel.php?tarih=' + tarih + '"></iframe>';
+                    $("#pops").html(tss);
+                }
 
             }
 

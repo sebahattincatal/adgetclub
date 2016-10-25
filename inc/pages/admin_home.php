@@ -241,7 +241,7 @@
                     </div>
                     <div class="col-xs-8">
                         <small>Kalitenin Onayladıkları Siparişler</small>
-                        <button class="btn btn-primary mr5 btn-lg" data-toggle="modal" data-target="#">
+                        <button class="btn btn-primary mr5 btn-lg" data-toggle="modal" data-target=".kaliteara">
                             Kaliteden Geçenler
                         </button>
                     </div>

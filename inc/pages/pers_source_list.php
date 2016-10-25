@@ -171,7 +171,7 @@
                         <td>'.number_format(($yeni->ciro-$yeni->t_indirim), 2, ',', '.').' ₺</td>
                         <td>'.$result.'</td>
                         ';
-                        echo '<td ><a href="pages.php?ido=pers_source_sales_view&id='.$value->admin_id.'&start='.$start_data.'&stop='.$stop_data.'" class="btn btn-info">Satışları</a></td>
+                        echo '<td ><a href="pages.php?ido=pers_source_sales_view&id='.$value->id.'&start='.$start_data.'&stop='.$stop_data.'" class="btn btn-info">Satışları</a></td>
                      </tr>
                      ';
                   }
